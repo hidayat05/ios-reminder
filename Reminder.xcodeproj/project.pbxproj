@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CE582ACA2692A695001E04D0 /* ReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE582AC92692A695001E04D0 /* ReminderApp.swift */; };
-		CE582ACC2692A695001E04D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE582ACB2692A695001E04D0 /* ContentView.swift */; };
+		CE582ACC2692A695001E04D0 /* ReminderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE582ACB2692A695001E04D0 /* ReminderList.swift */; };
 		CE582ACE2692A697001E04D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE582ACD2692A697001E04D0 /* Assets.xcassets */; };
 		CE582AD12692A697001E04D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE582AD02692A697001E04D0 /* Preview Assets.xcassets */; };
+		CE582ADA2692A902001E04D0 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE582AD92692A902001E04D0 /* Reminder.swift */; };
+		CE582ADC2692B2D5001E04D0 /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE582ADB2692B2D5001E04D0 /* ReminderCell.swift */; };
+		CE582ADE2692B2E8001E04D0 /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE582ADD2692B2E8001E04D0 /* ReminderManager.swift */; };
+		CE582AE12692B3A9001E04D0 /* ReminderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE582AE02692B3A9001E04D0 /* ReminderCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE582AC62692A695001E04D0 /* Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE582AC92692A695001E04D0 /* ReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderApp.swift; sourceTree = "<group>"; };
-		CE582ACB2692A695001E04D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE582ACB2692A695001E04D0 /* ReminderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderList.swift; sourceTree = "<group>"; };
 		CE582ACD2692A697001E04D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE582AD02692A697001E04D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE582AD22692A697001E04D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE582AD92692A902001E04D0 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		CE582ADB2692B2D5001E04D0 /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
+		CE582ADD2692B2E8001E04D0 /* ReminderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
+		CE582AE02692B3A9001E04D0 /* ReminderCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,10 @@
 		CE582AC82692A695001E04D0 /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
+				CE582AE22692B3E3001E04D0 /* View */,
+				CE582ADF2692B394001E04D0 /* ViewModel */,
+				CE582AD82692A8F0001E04D0 /* Model */,
 				CE582AC92692A695001E04D0 /* ReminderApp.swift */,
-				CE582ACB2692A695001E04D0 /* ContentView.swift */,
 				CE582ACD2692A697001E04D0 /* Assets.xcassets */,
 				CE582AD22692A697001E04D0 /* Info.plist */,
 				CE582ACF2692A697001E04D0 /* Preview Content */,
@@ -67,6 +77,32 @@
 				CE582AD02692A697001E04D0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE582AD82692A8F0001E04D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE582AD92692A902001E04D0 /* Reminder.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE582ADF2692B394001E04D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE582ADD2692B2E8001E04D0 /* ReminderManager.swift */,
+				CE582AE02692B3A9001E04D0 /* ReminderCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE582AE22692B3E3001E04D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE582ACB2692A695001E04D0 /* ReminderList.swift */,
+				CE582ADB2692B2D5001E04D0 /* ReminderCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE582ACC2692A695001E04D0 /* ContentView.swift in Sources */,
+				CE582AE12692B3A9001E04D0 /* ReminderCellViewModel.swift in Sources */,
+				CE582ADA2692A902001E04D0 /* Reminder.swift in Sources */,
+				CE582ADE2692B2E8001E04D0 /* ReminderManager.swift in Sources */,
+				CE582ACC2692A695001E04D0 /* ReminderList.swift in Sources */,
 				CE582ACA2692A695001E04D0 /* ReminderApp.swift in Sources */,
+				CE582ADC2692B2D5001E04D0 /* ReminderCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
